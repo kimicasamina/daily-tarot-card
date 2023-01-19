@@ -1,12 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
 body {
   margin: 0;
   padding: 0;
   line-height: 1.75;
   font-size: 18px;
-}
-
-* {
-  /* border: solid 1px red; */
+  background-color: HSL(238, 39%, 44%);
+  font-family: 'Amatic SC', cursive;
 }
 
 .container {
@@ -14,11 +14,19 @@ body {
   min-height: 100vh;
   max-width: 1440px;
   margin-inline: auto;
-  padding: 50px;
+  padding: 20px;
+  
+  @media screen and (min-width: 500px) {
+    padding: 50px;
+  }
 }
 
 header {
   text-align: center;
+}
+
+header h1 {
+  font-size: 4rem;
 }
 
 #get-card-btn {
@@ -26,6 +34,14 @@ header {
   color: #eee;
   padding: 10px 20px;
   border-radius: 5px;
+  border: solid 1px #242222;
+}
+
+#get-card-btn:hover {
+  /* background-color: HSL(238, 39%, 44%);
+  color: #eee;
+  border: solid 1px #242222; */
+  transition: .2s ease-in-out;
 }
 .cards {
   display: flex;
@@ -35,12 +51,12 @@ header {
 
 .card {
   padding: 30px;
+  font-family: cursive;
 }
 
-.card h3 {
-  text-align: center;
+.card p {
+  font-size: 1.5rem;
 }
-
 .card .card-meaning-up {
   margin-bottom: 20px;
 }

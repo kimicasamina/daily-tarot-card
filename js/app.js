@@ -15,21 +15,11 @@ const getCards = async () => {
   }
 }
 
-
-// const foo = getCards().then(data => {
-//   console.log(data)
-//   data.cards.forEach( card => {
-//     displayCards(card)
-//   })
-// }).catch(err => {
-//   console.log(err)
-// })
-
 function displayCards(){
   getCards().then(data => {
     data.cards.forEach(card => {
       html = `<div class="card">
-                <h3 class="card-name">${card.name}</h3>
+                <h2 class="card-name">${card.name}</h2>
                 <p class="card-meaning-up"><b>Meaning</b>: ${card.meaning_up}</p>
                 <p class="card-meaning-rev"><b>Reverse</b>: ${card.meaning_rev}</p>
                 </div>`
