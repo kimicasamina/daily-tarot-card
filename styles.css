@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.75;
+  font-size: 18px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 50px;
+}
