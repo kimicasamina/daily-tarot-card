@@ -6,7 +6,6 @@ I used the [tarot card api](https://github.com/ekelen/tarot-api) to get tarot ca
 ## BUILT WITH
 - HTML
 - CSS
-- SASS
 - JAVASCRIPT
 
 ## SCREENSHOTS
