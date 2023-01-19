@@ -5,8 +5,42 @@ body {
   font-size: 18px;
 }
 
+* {
+  /* border: solid 1px red; */
+}
+
 .container {
   width: 100%;
+  min-height: 100vh;
   max-width: 1440px;
+  margin-inline: auto;
   padding: 50px;
+}
+
+header {
+  text-align: center;
+}
+
+#get-card-btn {
+  background: #242222;
+  color: #eee;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: 30px;
+}
+
+.card h3 {
+  text-align: center;
+}
+
+.card .card-meaning-up {
+  margin-bottom: 20px;
 }
